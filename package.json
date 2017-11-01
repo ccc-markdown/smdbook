@@ -1,0 +1,16 @@
+{
+  "name": "smdbook",
+  "version": "0.1.0",
+  "description": "Static Markdown Renderer",
+  "dependencies": {
+    "koa": "^2.3.0",
+    "koa-static": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/ccckmit/smdbook.git"
+  },
+  "license": "MIT"
+}
