@@ -48,9 +48,9 @@ function show () {
   var file = window.location.hash.substring(1)
   var path = file.match(/^(.*\/).*$/)[1]
 //  var sideFile = path + 'sidebar.md'
-  fetchRender('./' + file, mdMain)
-  fetchRender('./' + path + 'sidebar.md', mdSide)
-  fetchRender('./' + path + 'footer.md', mdFoot)
+  fetchRender('../book/' + file, mdMain)
+  fetchRender('../book/' + path + 'sidebar.md', mdSide)
+  fetchRender('../book/' + path + 'footer.md', mdFoot)
 }
 
 var mdSide, mdMain, mdFoot
@@ -72,4 +72,10 @@ function openNav () {
 
 function closeNav () {
   document.getElementById('sidemenu').style.width = '0'
+}
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function taggleButtonMenu () {
+  document.getElementById('userDropdown').classList.toggle('show');
 }

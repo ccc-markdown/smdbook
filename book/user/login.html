@@ -1,0 +1,21 @@
+<form action="/user/login" style="width:20em" method="post">
+  <div class="container">
+    <h2>Login Form</h2>
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required/>
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+    <button type="submit" class="green maxwidth">Login</button>
+    <br/><br/>
+    <input type="checkbox" checked="checked"> Remember me
+  </div>
+  
+  <div class="container" style="background-color:#f1f1f1; text-align:right">
+      You have no account => <a href="#">Sign up?</a><br/><br/>
+      Forgot password ? <a href="#">Reset by email !</a>
+  </div>
+</form>
+
+<form action="/auth/facebook" style="width:20em" method="get">
+  <button type="submit" class="blue">Facebook Login</button>
+</form>
